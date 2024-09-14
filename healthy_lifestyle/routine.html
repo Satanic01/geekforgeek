@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise Routine Planner</title>
+    <link rel="stylesheet" href="routine.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exercise Routine Planner</h1>
+            <p>Get personalized exercise routines based on your weight, height, and health conditions.</p>
+        </header>
+
+        <section class="form-section">
+            <h2>Enter Your Details</h2>
+            <form>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required>
+
+                <label for="disease">Do you have any health conditions?</label>
+                <select id="disease" name="disease">
+                    <option value="none">None</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="heart-disease">Heart Disease</option>
+                </select>
+
+                <button type="button" onclick="generateRoutine()">Generate Routine</button>
+            </form>
+        </section>
+
+        <section class="routine-section" id="routine-section">
+            <h2>Your Recommended Exercise Routine</h2>
+            <div id="routine"></div>
+        </section>
+    </div>
+
+    <script src="routine.js"></script>
+</body>
+</html>

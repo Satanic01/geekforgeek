@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tips</title>
+    <link rel="stylesheet" href="health-tips.css">
+</head>
+<body>
+    <section>
+        <h2>Health Tips</h2>
+        
+        <div class="grid">
+          
+            <div class="card">
+                <h3>Stay Hydrated</h3>
+                <p>Drink at least 8 glasses of water per day to keep your body hydrated. Water helps maintain body temperature, remove waste, and lubricate joints.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more1')">Read More</button>
+                <p id="more1" class="more-info">Water is essential for maintaining the balance of body fluids. It helps in digestion, absorption, circulation, and temperature regulation. Drinking water before meals can also help with weight control by making you feel fuller.</p>
+            </div>
+    
+            
+            <div class="card">
+                <h3>Get Enough Sleep</h3>
+                <p>Aim for 7-8 hours of sleep per night. Proper sleep is crucial for mental health, concentration, and overall well-being.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more2')">Read More</button>
+                <p id="more2" class="more-info">Chronic sleep deprivation can lead to serious health issues such as heart disease, high blood pressure, and diabetes. Establishing a consistent bedtime routine can improve the quality of your sleep.</p>
+            </div>
+    
+            
+            <div class="card">
+                <h3>Eat a Balanced Diet</h3>
+                <p>Incorporate fruits, vegetables, whole grains, and lean proteins into your meals. Avoid processed foods and high sugar intake.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more3')">Read More</button>
+                <p id="more3" class="more-info">A balanced diet ensures that your body gets all the necessary nutrients it needs to function properly. It boosts your immune system, keeps your energy levels stable, and can prevent chronic diseases.</p>
+            </div>
+
+            
+            <div class="card">
+                <h3>Exercise Regularly</h3>
+                <p>Engage in physical activity for at least 30 minutes a day to maintain fitness and reduce stress.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more4')">Read More</button>
+                <p id="more4" class="more-info">Regular exercise improves cardiovascular health, boosts mood, strengthens muscles, and helps control weight. Consistency is key, so find activities you enjoy, like walking, cycling, or yoga.</p>
+            </div>
+    
+           
+            <div class="card">
+                <h3>Practice Stress Management</h3>
+                <p>Incorporate relaxation techniques like meditation or deep breathing into your daily routine to reduce stress.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more5')">Read More</button>
+                <p id="more5" class="more-info">Chronic stress can lead to mental and physical health issues. Managing stress through mindfulness, exercise, and relaxation techniques can improve your overall well-being and prevent long-term health problems.</p>
+            </div>
+    
+            
+            <div class="card">
+                <h3>Limit Alcohol and Avoid Smoking</h3>
+                <p>Moderate your alcohol intake and avoid smoking for better health.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more6')">Read More</button>
+                <p id="more6" class="more-info">Excessive alcohol and smoking can lead to serious health conditions such as liver disease, cancer, and cardiovascular issues. Avoid smoking and limit alcohol to reduce the risk of long-term health problems.</p>
+            </div>
+    
+            
+            <div class="card">
+                <h3>Maintain Social Connections</h3>
+                <p>Keep in touch with friends and family to support emotional well-being.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more7')">Read More</button>
+                <p id="more7" class="more-info">Strong social connections can improve mental health and emotional well-being. Social support helps reduce stress and enhances your sense of belonging, which is crucial for mental health.</p>
+            </div>
+    
+            
+            <div class="card">
+                <h3>Stay Active Mentally</h3>
+                <p>Keep your mind sharp by engaging in puzzles, reading, or learning new skills.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more8')">Read More</button>
+                <p id="more8" class="more-info">Mental stimulation improves brain function and can help prevent cognitive decline. Activities like puzzles, brain games, reading, or learning new skills can enhance memory and cognitive abilities.</p>
+            </div>
+    
+            
+            <div class="card">
+                <h3>Get Regular Health Checkups</h3>
+                <p>Visit your doctor regularly to catch potential health issues early.</p>
+                <button class="read-more-btn" onclick="toggleInfo('more9')">Read More</button>
+                <p id="more9" class="more-info">Regular health screenings can help detect conditions like high blood pressure, diabetes, and certain cancers early, improving the chances of successful treatment.</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <script>
+        function toggleInfo(id) {
+            var moreText = document.getElementById(id);
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "block";
+            } else {
+                moreText.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
